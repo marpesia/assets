@@ -114,7 +114,7 @@ class ExamplesController extends AppController {
 					$image = $new_image_resize; 
 					//resize
 				} else {
-					$ratio = $image / imagesx($image);
+					$ratio = $thumb_size / imagesx($image);
 					$height = imagesy($image) * $ratio;
 
 					//resize
